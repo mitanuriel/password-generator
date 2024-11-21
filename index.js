@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordBoxOne = document.getElementById("password-1");
     const passwordBoxTwo = document.getElementById("password-2");
 
-    randomizerButton.addEventListener("click", generatePassword);
 
     function generatePassword() {
         const characters = [
@@ -22,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         passwordBoxOne.value = password;
         passwordBoxTwo.value = password;
     }
+
+    randomizerButton.addEventListener("click", generatePassword);
 });
 
-console.log(passwordBoxOne);
